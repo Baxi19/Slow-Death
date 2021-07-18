@@ -24,7 +24,6 @@ public class PlayerC : MonoBehaviour
     private PlayerControls playerInput;
     private Transform cameraMain;
     private Transform child;
-    bool couroutineStarted = false;
 
     private void Awake()
     {
@@ -59,10 +58,13 @@ public class PlayerC : MonoBehaviour
         }
 
         Vector2 movementInput = playerInput.PlayerMain.Move.ReadValue<Vector2>();
-        
-        if(movementInput != Vector2.zero){
+
+        if (movementInput != Vector2.zero)
+        {
             playerAnimator.SetBool("isRunning", true);
-        }else{
+        }
+        else
+        {
             playerAnimator.SetBool("isRunning", false);
         }
 
@@ -75,7 +77,47 @@ public class PlayerC : MonoBehaviour
         if (playerInput.PlayerMain.Jump.triggered && groundedPlayer)
         {
             playerAnimator.SetBool("isJumping", true);
-            playerVelocity.y += Mathf.Sqrt(jumpHeight * -3.0f * gravityValue); 
+            playerVelocity.y += Mathf.Sqrt(jumpHeight * -3.0f * gravityValue);
+        }
+
+        // Emote 1
+        if (playerInput.PlayerMain.Emote1.triggered)
+        {
+            playerAnimator.SetBool("emote-1", true);
+        }
+        else
+        {
+            playerAnimator.SetBool("emote-1", false);
+        }
+
+        // Emote 2
+        if (playerInput.PlayerMain.Emote2.triggered)
+        {
+            playerAnimator.SetBool("emote-2", true);
+        }
+        else
+        {
+            playerAnimator.SetBool("emote-2", false);
+        }
+
+        // Emote 3
+        if (playerInput.PlayerMain.Emote3.triggered)
+        {
+            playerAnimator.SetBool("emote-3", true);
+        }
+        else
+        {
+            playerAnimator.SetBool("emote-3", false);
+        }
+
+        // Emote 4
+        if (playerInput.PlayerMain.Emote4.triggered)
+        {
+            playerAnimator.SetBool("emote-4", true);
+        }
+        else
+        {
+            playerAnimator.SetBool("emote-4", false);
         }
 
         playerVelocity.y += gravityValue * Time.deltaTime;

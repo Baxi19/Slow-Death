@@ -62,7 +62,7 @@
                     "interactions": ""
                 },
                 {
-                    "name": "Emote-1",
+                    "name": "Emote_1",
                     "type": "Button",
                     "id": "aaa86f9e-cd3a-4e43-85e2-e66a4549b0fe",
                     "expectedControlType": "Button",
@@ -70,7 +70,7 @@
                     "interactions": ""
                 },
                 {
-                    "name": "Emote-2",
+                    "name": "Emote_2",
                     "type": "Button",
                     "id": "13d303b0-7acf-4cf2-b62c-fa28ba4f2dbb",
                     "expectedControlType": "Button",
@@ -78,7 +78,7 @@
                     "interactions": ""
                 },
                 {
-                    "name": "Emote-3",
+                    "name": "Emote_3",
                     "type": "Button",
                     "id": "88a59a12-46b1-42a9-b8ae-191c50e3aaa8",
                     "expectedControlType": "Button",
@@ -86,7 +86,7 @@
                     "interactions": ""
                 },
                 {
-                    "name": "Emote-4",
+                    "name": "Emote_4",
                     "type": "Button",
                     "id": "eadd1db1-3595-4fbd-a89b-6b25d84fc363",
                     "expectedControlType": "Button",
@@ -278,7 +278,7 @@
                     "interactions": "",
                     "processors": "",
                     "groups": "",
-                    "action": "Emote-1",
+                    "action": "Emote_1",
                     "isComposite": false,
                     "isPartOfComposite": false
                 },
@@ -289,7 +289,7 @@
                     "interactions": "",
                     "processors": "",
                     "groups": "",
-                    "action": "Emote-2",
+                    "action": "Emote_2",
                     "isComposite": false,
                     "isPartOfComposite": false
                 },
@@ -300,7 +300,7 @@
                     "interactions": "",
                     "processors": "",
                     "groups": "",
-                    "action": "Emote-3",
+                    "action": "Emote_3",
                     "isComposite": false,
                     "isPartOfComposite": false
                 },
@@ -311,7 +311,7 @@
                     "interactions": "",
                     "processors": "",
                     "groups": "",
-                    "action": "Emote-4",
+                    "action": "Emote_4",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }
